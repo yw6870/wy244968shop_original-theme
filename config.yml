@@ -1,4 +1,4 @@
 development:
   password: ${WY244968_DEV_PASSWD}
   theme_id: ${WY244968_DEV_THEMEID_ORIGINALTHEME}
-  store: ${WY244968_DEV_SHOP}
+  store: ${WY244968_DEV_SHOP} 
