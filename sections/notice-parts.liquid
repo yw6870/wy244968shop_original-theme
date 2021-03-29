@@ -1,0 +1,52 @@
+<div class="page-width">
+  <h1 class="notice-title">お知らせ</h1>
+  <div class="notice-contents">
+    <p>{{section.settings.notice}}</p>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "お知らせ",
+    "settings": [
+      {
+        "id": "notice",
+        "type": "textarea",
+        "label": "お知らせ"
+      }
+    ],
+    "presets": [
+      {
+        "name": "お知らせ",
+        "category": "テキスト"
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+.notice-title {
+  margin-top: 80px;
+  text-align: center;
+}
+.notice-contents {
+  width: 70%;
+  min-width: 300px;
+  height: 300px;
+  margin: 0 auto;
+/*   border: 1px solid black; */
+  padding: 10px 20px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.notice-contents p {
+/*   border-bottom: 1px solid black; */
+  font-size: 15px;
+  line-height: 1.7;
+  white-space: pre-wrap;
+}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}
